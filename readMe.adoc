@@ -6,16 +6,24 @@
 
 = Project: {ESP32_WiFiManager_Basic.ino}
 
-Describe your project
+This project uses the WiFimanager library to allow the ESP32 to connect
+to any network by scanning available connections
+and allowing the user to select an access point
+and provide the password to connect
+
+This removes the need to hard-code the credentials
+
+The library will also remember the network for automatic reconnection 
 
 == Step 1: Installation
-Please describe the steps to install this project.
 
-For example:
-
-1. Open this file
-2. Edit as you like
-3. Release to the World!
+1. Download the WiFiManager library 
+2. Load the ESP32_WiFiManager_Basic.ino file to the board 
+3. Check your device for the WiFi network ESP32_Test
+4. Select Connect to Network
+5. Your device will present the log in screen
+6. Select your network and provide the password
+7. You're now connected 
 
 == Step 2: Assemble the circuit
 
@@ -28,10 +36,8 @@ Upload the code contained in this sketch on to your board
 === Folder structure
 
 ....
-EESP32_WiFiManager_Basic          => Arduino sketch folder
+ESP32_WiFiManager_Basic           => Arduino sketch folder
   ├── ESP32_WiFiManager_Basic.ino => main Arduino file
-  ├── schematics.png              => (optional) an image of the required schematics
-  ├── layout.png                  => (optional) an image of the layout
   └── ReadMe.adoc                 => this file
 ....
 
